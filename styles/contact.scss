@@ -12,60 +12,59 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
   
-header {
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;             
-    width: 100%;
-    position: fixed;                 
-    top: 0;
-    left: 0;
-    padding: 10px 20px;  
-    z-index: 1000;    
-    background-color: white;    
-    font-size: $font-size-medium;   
+    header {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;             
+        width: 100%;
+        position: fixed;                 
+        top: 0;
+        left: 0;
+        padding: 10px 20px;  
+        z-index: 1000;    
+        background-color: white;    
+        font-size: $font-size-medium;   
 
 
-.nav {
-    ul {
-        display: flex; 
-        list-style-type: none;
-        padding: 0;
-      
-        font-weight: 700;
+    .nav {
+        ul {
+            display: flex; 
+            list-style-type: none;
+            padding: 0;
+            font-weight: 700;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            color: $seconday-color;
+        }
     }
-
-    li {
-        margin-right: 20px;
+    .nav.left {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1;
+        padding-left: 30px;
+        
     }
-
-    a {
-        color: $primary-color;
-        text-decoration: none;
-        padding: 10px;
-        transition: background-color 0.3s ease;
+    .nav.right {
+        display: flex;
+        justify-content: flex-end;
     }
-
-    a:hover {
-        color: $seconday-color;
     }
-}
-.nav.left {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;
-    padding-left: 30px;
-    
-}
-.nav.right {
-    display: flex;
-    justify-content: flex-end;
-}
-}
 .container{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: flex-start;
     width: 100vw;
     padding: 80px;
@@ -134,6 +133,6 @@ header {
     iframe {
         width: 100%;
         border: 0;
-}
-}
+            }
+    }
 }

@@ -13,8 +13,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-header {
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +32,7 @@ header {
   background-color: white;
   font-size: 18px;
 }
-header .nav ul {
+body header .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,20 +40,20 @@ header .nav ul {
   padding: 0;
   font-weight: 700;
 }
-header .nav li {
+body header .nav li {
   margin-right: 20px;
 }
-header .nav a {
+body header .nav a {
   color: black;
   text-decoration: none;
   padding: 10px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-header .nav a:hover {
+body header .nav a:hover {
   color: blue;
 }
-header .nav.left {
+body header .nav.left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +65,7 @@ header .nav.left {
           flex-grow: 1;
   padding-left: 30px;
 }
-header .nav.right {
+body header .nav.right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +73,10 @@ header .nav.right {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
-main {
+body main {
   width: 100vw;
 }
-main .container {
+body main .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,19 +91,19 @@ main .container {
   padding: 80px;
   margin-top: 60px;
 }
-main .container .left_section {
+body main .container .left_section {
   max-width: 800px;
   font-family: "mulish", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
-main .container .left_section h1, main .container .left_section p {
+body main .container .left_section h1, body main .container .left_section p {
   margin-bottom: 10px;
 }
-main .container .left_section p {
+body main .container .left_section p {
   font-weight: 200;
 }
-main .container .right_section {
+body main .container .right_section {
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -114,7 +112,7 @@ main .container .right_section {
   padding-right: 60px;
   line-height: 2;
 }
-main .container .right_section .row {
+body main .container .right_section .row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5px 2fr;
@@ -123,10 +121,10 @@ main .container .right_section .row {
   padding: 4px 0;
   border-bottom: 1px solid gray;
 }
-main .container .right_section .row .title {
+body main .container .right_section .row .title {
   font-weight: 800;
 }
-main .centerimage {
+body main .centerimage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,16 +136,16 @@ main .centerimage {
       -ms-flex-align: center;
           align-items: center;
 }
-main .centerimage img {
+body main .centerimage img {
   width: 90%;
 }
-main .content_text {
+body main .content_text {
   font-family: "mulish", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   padding: 80px;
 }
-main .image_container {
+body main .image_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,14 +159,13 @@ main .image_container {
   padding-bottom: 60px;
   width: 100vw;
 }
-main .image_container .img {
+body main .image_container .img {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-footer {
+body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +177,7 @@ footer {
           align-items: center;
   width: 100vw;
 }
-footer .footer_left ul, footer .footer_right_1 ul {
+body footer .footer_left ul, body footer .footer_right_1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,16 +187,16 @@ footer .footer_left ul, footer .footer_right_1 ul {
   width: 100%;
   padding: 0px 40px 0px 40px;
 }
-footer .footer_left ul li a, footer .footer_right_1 ul li a {
+body footer .footer_left ul li a, body footer .footer_right_1 ul li a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   color: black;
 }
-footer .footer_left ul li a:hover, footer .footer_right_1 ul li a:hover {
+body footer .footer_left ul li a:hover, body footer .footer_right_1 ul li a:hover {
   color: blue;
 }
-footer .footer_right {
+body footer .footer_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +205,7 @@ footer .footer_right {
       -ms-flex-align: center;
           align-items: center;
 }
-footer .footer_right .footer_icons {
+body footer .footer_right .footer_icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +213,7 @@ footer .footer_right .footer_icons {
   padding-right: 60px;
   color: black;
 }
-footer .footer_right .footer_icons a {
+body footer .footer_right .footer_icons a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,12 +225,12 @@ footer .footer_right .footer_icons a {
           align-items: center;
   text-decoration: none;
 }
-footer .footer_right .footer_icons a i {
+body footer .footer_right .footer_icons a i {
   font-size: 16px;
   color: #000;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-footer .footer_right .footer_icons a i:hover {
+body footer .footer_right .footer_icons a i:hover {
   color: blue;
 }
