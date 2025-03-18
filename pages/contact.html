@@ -12,19 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="../styles/contact.css">
   </head>
   <body>
     <header>
         <div class="nav left">
             <ul>
-                <li><a href="index.html">Genesis</a></li>
+                <li><a href="../pages/index.html">Genesis</a></li>
             </ul>
         </div>
         <div class="nav right">
             <ul>
-                <li><a href="project_detail.html">Projects</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="../pages/project_detail.html">Projects</a></li>
+                <li><a href="../pages/contact.html">Contacts</a></li>
             </ul>
         </div>
     </header>
@@ -38,9 +38,9 @@
         </div>
         <div class="right_section">
             <form>
-                <input type="text" placeholder="Name" class="input" />
-                <input type="email" placeholder="Email" class="input" />
-                <textarea placeholder="Message" class="input"></textarea>
+                <input type="text" placeholder="Name" class="input" required />
+                <input type="email" placeholder="Email" class="input" required/>
+                <textarea placeholder="Message" class="input" required></textarea>
                 <button type="submit" class="submit">Submit</button>
             </form>
         </div>
